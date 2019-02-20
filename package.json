@@ -1,0 +1,31 @@
+{
+  "name": "gcp_translate",
+  "version": "1.0.0",
+  "description": "Cloud function to trigger Google Translate API",
+  "main": "index.js",
+  "dependencies": {
+    "@google-cloud/translate": "^2.1.3",
+    "dotenv": "^6.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/normankong/gcp_translate.git"
+  },
+  "keywords": [
+    "GCP",
+    "Cloud",
+    "Function",
+    "Translate",
+    "API"
+  ],
+  "author": "Norman K K Kong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/normankong/gcp_translate/issues"
+  },
+  "homepage": "https://github.com/normankong/gcp_translate#readme"
+}
