@@ -50,7 +50,5 @@ credential.json
 }
 ```
 # Deployment
-* Local Simulator  
-    functions deploy handle --trigger-http
-* Read Log
-    functions logs read
+* Local Simulator  (With functions-framework)
+    npm start

@@ -12,7 +12,7 @@ let GCP_CLIENT = null; // Lazy Initialzation
  * @param {!express:Request} req HTTP request context.
  * @param {!express:Response} res HTTP response context.
  */
-exports.handle = (req, res) => {
+exports.processTranslate = (req, res) => {
 
   var text = req.body.text;
   var lang = req.body.lang;

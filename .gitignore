@@ -67,3 +67,4 @@ obsolete
 key
 package-lock.json
 credential.json
+*.zip
