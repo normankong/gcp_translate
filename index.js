@@ -1,4 +1,5 @@
 require('dotenv').config();
+const authHelper = require("./lib/authHelper.js");
 
 // Imports the Google Cloud client library
 const {
@@ -13,6 +14,12 @@ let GCP_CLIENT = null; // Lazy Initialzation
  * @param {!express:Response} res HTTP response context.
  */
 exports.processTranslate = (req, res) => {
+
+  var opts = {
+    req: req,
+    res: res
+  }
+  if (!authHelper().verifyToken(opts)) return;
 
   var text = req.body.text;
   var lang = req.body.lang;
